@@ -1,6 +1,6 @@
 ## GHES - OCP - ARC (Azure) Setup
 
-The following outlines the steps used in the YouTube video ()
+The following outlines the steps used in the YouTube video PART 1 (https://youtu.be/c6PmdR1jo5g)
 to install GitHub Entperise Server (GHES) via CLI on Azure, along with installing the OpenShift Container Platform (OCP) within
 the same vNET, and then configuring the Actions Runner Controller (ARC) for running automation, CICD jobs from GHES via OCP.
 
@@ -76,7 +76,7 @@ the same vNET, and then configuring the Actions Runner Controller (ARC) for runn
     ~~az storage account keys list --resource-group `${RESOURCE_GROUP}` --account-name `${STORAGESA}`~~
 
 ### **OpenShift Azure Setup**
-
+The following outlines the steps used in the YouTube video PART 2 ()
 ### Prereqs
     1. macOS OpenShift Installer : https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-install-mac.tar.gz
     2. macOS OpenShift CLI (oc) : https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-mac.tar.gz
