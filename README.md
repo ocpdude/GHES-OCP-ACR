@@ -1,6 +1,6 @@
 ## GHES - OCP - ARC (Azure) Setup
 
-The following outlines the steps used in the YouTube video PART 1 (https://youtu.be/c6PmdR1jo5g)
+The following outlines the steps used in the YouTube video PART 1 (https://youtu.be/Is_pT4vre-s)
 to install GitHub Entperise Server (GHES) via CLI on Azure, along with installing the OpenShift Container Platform (OCP) within
 the same vNET, and then configuring the Actions Runner Controller (ARC) for running automation, CICD jobs from GHES via OCP.
 
