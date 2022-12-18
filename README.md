@@ -125,7 +125,7 @@ During the demo, I manually created subnets for the OpenShift master and worker 
     ./openshift-install create cluster --dir=<installation_directory>
     
 ### **OpenShift Actions Runner Controller Setup**
-_Multitenancy on OpenShift via GitHub Apps_
+_Multitenancy on OpenShift via GitHub Apps_ \
 The following outlines the steps used in the YouTube video PART 3 (https://youtu.be/nVy7mpeaS88)
 
  With a few changes we can leverage a single ARC controller-manager across multiple orgazations. A quick prereq is that the controller must be on 
