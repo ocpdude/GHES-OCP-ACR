@@ -3,11 +3,11 @@ name: Podman-Runner
 on:
   push:
     paths:
-    - 'images/podman-runner/Dockerfile'
+    - './images/podman-runner/Dockerfile'
   workflow_dispatch:
 
-env:
-  FILTER_REGEX_INCLUDE: ./images/podman-runner/*
+# env:
+#   FILTER_REGEX_INCLUDE: ./images/podman-runner/*
 
 jobs:
   build-podman-image:
