@@ -39,6 +39,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ./images/podman-runner
           push: true
           tags: docker.io/shaker242/podman-runner:v${{github.run_number}}
