@@ -10,7 +10,7 @@ env:
   FILTER_REGEX_INCLUDE: ./images/podman-runner/*
 
 jobs:
-  build:
+  build-podman-image:
     runs-on: ubuntu-latest
     steps:
       -
