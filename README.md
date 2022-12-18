@@ -216,7 +216,6 @@ _Multitenancy on OpenShift via GitHub Apps_
        ```
   👉 Repeat for each Org GitHub App (RunnerDeployment/HorizontalRunnerAutoscaler)
 
-
  --------
 
  #### Troubleshooting
@@ -230,3 +229,4 @@ _Multitenancy on OpenShift via GitHub Apps_
  3. Images used in this demo:
     * docker.io/shaker242/podman-runner:1206.1
     * docker.io/shaker242/default-runner:1203.2
+
