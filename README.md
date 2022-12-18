@@ -76,7 +76,7 @@ the same vNET, and then configuring the Actions Runner Controller (ARC) for runn
     ~~az storage account keys list --resource-group `${RESOURCE_GROUP}` --account-name `${STORAGESA}`~~
 
 ### **OpenShift Azure Setup**
-The following outlines the steps used in the YouTube video PART 2 ()
+The following outlines the steps used in the YouTube video PART 2 (https://youtu.be/dMyXWxX41TY)
 ### Prereqs
     1. macOS OpenShift Installer : https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-install-mac.tar.gz
     2. macOS OpenShift CLI (oc) : https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-mac.tar.gz
@@ -126,6 +126,7 @@ During the demo, I manually created subnets for the OpenShift master and worker 
     
 ### **OpenShift Actions Runner Controller Setup**
 _Multitenancy on OpenShift via GitHub Apps_
+The following outlines the steps used in the YouTube video PART 3 (https://youtu.be/nVy7mpeaS88)
 
  With a few changes we can leverage a single ARC controller-manager across multiple orgazations. A quick prereq is that the controller must be on 
  version 0.26.0+. The initial advantage of this is no having the overhead of multiple controllers and crd's that need to be managed, being our of 
