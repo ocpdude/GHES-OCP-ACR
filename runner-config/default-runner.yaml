@@ -1,0 +1,49 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: org2-default-runner
+spec:
+  template:
+    metadata:
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+    spec:
+      githubAPICredtntialsFrom:
+        secretRef:
+          name: org2-github-app 
+      group: openshift
+      labels:
+        - default
+      securityContext:
+        privileged: true
+        fsGroup: 1000
+      organization: orgtwo 
+      imagePullPolicy: Always
+      resources:
+        limits:
+          cpu: "1"
+          memory: "2Gi"
+        requests:
+          cpu: "0.5"
+          memory: "1Gi"
+      image: docker.io/shaker242/default-runner:1203.2 
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: HorizontalRunnerAutoscaler
+metadata:
+  name: org2-default-hra
+spec:
+  githubAPICredtntialsFrom:
+    secretRef:
+      name: org2-github-app 
+  scaleDownDelaySecondsAfterScaleOut: 300
+  scaleTargetRef:
+    name: org2-default-runner 
+  minReplicas: 2
+  maxReplicas: 5
+  metrics:
+    - type: PercentageRunnersBusy
+      scaleUpThreshold: "0.75"
+      scaleDownThreshold: "0.25"
+      scaleUpFactor: "2"
+      scaleDownFactor: "0.5"
