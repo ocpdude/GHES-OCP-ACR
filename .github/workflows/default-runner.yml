@@ -38,4 +38,4 @@ jobs:
         with:
           context: ./images/default-runner
           push: true
-          tags: docker.io/shaker242/default-runner:v${{github.run_number}}
+          tags: docker.io/shaker242/default-runner:v${{github.run_number}},docker.io/shaker242/default-runner:latest
