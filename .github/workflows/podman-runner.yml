@@ -41,4 +41,4 @@ jobs:
         with:
           context: ./images/podman-runner
           push: true
-          tags: docker.io/shaker242/podman-runner:v${{github.run_number}}
+          tags: docker.io/shaker242/podman-runner:v${{github.run_number}},docker.io/shaker242/podman-runner:latest
